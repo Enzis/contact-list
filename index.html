@@ -1,0 +1,18 @@
+<html ng-app="contactList">
+<head>
+<title>Contact List</title>
+<script src = "lib/js/angular.min.js"></script>
+<link rel="stylesheet" type="text/css" href="lib/css/bootstrap.css"></link>
+    <script>
+        angular.module("contactList",[]);
+        angular.module("contactList").controller("contactListCtrl", function ($scope){    
+            $scope.app = "Lista Telefonica";       
+        });
+    </script>
+</head>
+<body ng-controller="contactListCtrl">
+    <div>
+        <h4 ng-bind="app"></h4>
+    </div>
+</body>
+</html>
